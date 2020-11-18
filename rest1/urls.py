@@ -19,6 +19,7 @@ from restapp1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/',views.start ),
     path('bot/',views.himanshuList.as_view()),
     path('add/<int:a>,<int:b>',views.add),
     path('sub/<int:a>,<int:b>',views.sub),
